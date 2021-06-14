@@ -1,5 +1,5 @@
 async function getRandomDog (){
-    const res = await axios.get('https://dog.ceo/api/breeds/image/random');
+    const res = await axios.get('http://api.giphy.com/v1/gifs/search');
     console.log(res.data);
     const img = document.querySelector("#dog");
     img.src = res.data.message;
